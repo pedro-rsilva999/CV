@@ -12,7 +12,7 @@ body
 }
 
 .css-selector {
-    background: linear-gradient(268deg, #39685e, #15856e, #00cba1);
+    background: linear-gradient(268deg, #2c2c2c, #424242, #3b3b3b);
     background-size: 600% 600%;
 
     -webkit-animation: AnimationName 7s ease infinite;
@@ -40,4 +40,57 @@ body
     0%{background-position:0% 53%}
     50%{background-position:100% 48%}
     100%{background-position:0% 53%}
+}
+
+/*
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+*/
+
+section div
+{
+    background: transparent;
+    color: transparent;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    border: rgb(255, 255, 255) solid 1px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+section div h1
+{
+    color: rgb(255, 255, 255);
+}
+
+section div h2
+{
+    color: rgb(232, 208, 255);
+    text-align: center;
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 183, 249, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 151, 246, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 70, 240, 0);
+	}
 }
